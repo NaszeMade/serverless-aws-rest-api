@@ -3,7 +3,7 @@
 ##Overview:
 
 ## Steps:
-1. ** Navigate to the AWS Console**:
+1. **Navigate to the AWS Console**:
    - Find the `DynamoDB` service > `Create table`.
 2. **Fill In the Table Details**:
    - Fill in the table name and partition key.
