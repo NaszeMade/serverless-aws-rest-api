@@ -1,10 +1,10 @@
 # Step 3: Lambda Function Setup
 
 ## Overview:
-The AWS Lambda Function is very crucial because it makes sure that the lambda function has permission to access the DynamoDB table.
+The AWS Lambda Function is crucial because it ensures that the Lambda function has permission to access the DynamoDB table and perform the necessary CRUD operations. Lambda functions handle the core logic of your application, triggered by API Gateway.
 
 ## Steps:
-1. ** Navigate to the AWS Console**:
+1. **Navigate to the AWS Console**:
    - Find the `Lambda` service > `Dashboard` > `Create function`.
 2. **Fill In the function editor**:
    - Choose the `Author from scratch` option, fill in the name and choose runtime (Python).
@@ -45,4 +45,6 @@ def lambda_handler(event,context):
         return operations[operation](event.get('payload'))
     else:
         raise ValueError('Unrecognized operation "{}"'.format(operation)) `
-   - Click `Deploy`
+   - Click `Deploy`.
+
+This Lambda function will now be ready to handle CRUD operations with DynamoDB as specified by the event payload, performing actions such as creating, reading, updating, or deleting items in the specified DynamoDB table.
