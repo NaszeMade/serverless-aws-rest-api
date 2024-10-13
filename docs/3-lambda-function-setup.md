@@ -1,7 +1,7 @@
 # Step 3: Lambda Function Setup
 
 ## Overview:
-The AWS Lambda Function is crucial because it ensures that the Lambda function has permission to access the DynamoDB table and perform the necessary CRUD operations. Lambda functions handle the core logic of your application, triggered by API Gateway.
+The AWS Lambda Function is crucial because it ensures that the Lambda function has permission to access the DynamoDB table and perform the necessary CRUD operations. Lambda functions handle the core logic of the application, triggered by API Gateway.
 
 ## Steps:
 1. **Navigate to the AWS Console**:
