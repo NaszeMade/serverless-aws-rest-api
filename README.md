@@ -9,6 +9,7 @@ In this project, I created a fully serverless REST API using AWS services to han
 - **AWS API Gateway**
 
 ## Other Services
-- Postman
+- **Postman**
 
 ## Steps Involved
+1-dynamodb-setup
