@@ -1,6 +1,7 @@
 # Step 5: API Gateway Setup
 
-## Overview: The AWS API Gateway is critical for exposing your Lambda functions as RESTful endpoints that clients can access over HTTP. It serves as the entry point to the serverless API, handling all routing, security, and request management. API Gateway enables you to define routes, manage traffic, set up throttling and authorization, and seamlessly integrate with other AWS services like Lambda. By connecting API Gateway to your Lambda functions, you can build a scalable, secure, and fully managed REST API without the need to manage infrastructure.
+## Overview:
+The AWS API Gateway is critical for exposing your Lambda functions as RESTful endpoints that clients can access over HTTP. It serves as the entry point to the serverless API, handling all routing, security, and request management. API Gateway enables you to define routes, manage traffic, set up throttling and authorization, and seamlessly integrate with other AWS services like Lambda. By connecting API Gateway to your Lambda functions, you can build a scalable, secure, and fully managed REST API without the need to manage infrastructure.
 
 ## Steps:
 ### 1. **Open API Gateway in AWS Management Console**
