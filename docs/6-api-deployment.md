@@ -1,22 +1,21 @@
-# Step 2: API Deployment Setup
+# Step 6: API Deployment Setup
 
 ## Overview:
-The AWS Lambda IAM role is very crucial because it makes sure that the lambda function has permission to access the DynamoDB table.
+This step is setting up the serverless REST API and deploying it to a specific stage. Deployment makes the API publicly accessible, allowing it to be invoked by clients using the provided URL.
 
 ## Steps:
-1. **Navigate to the AWS Console**:
-   - Find the `IAM` service > `Policies` > `create policy`.
-2. **Fill In the JSON policy editor**:
-   - Give me the limit of function, the ability to basically edit the items in the DynamoDB.
-   - Watch the CloudWatch Stream (optional).
-3. **Review and Create**:
-   - After all the information is filled out click next.
-   - enter the policy name and add a optional description.
-4. **Navigate back to the IAM Dashboard**:
-   - Find the `Roles` > `Create roles`.
-5. **Creating the role**:
-   - Select `AWS service` trusted entity type and select `Lambda` as the use case
-   - Selected the newly created policy for the `Add Permissions` step.
-   - Enter the Role name and an optional description
 
-## Screenshot:
+1. **Deploying the API**:
+   - After the API is sucessfully created, find and click the `Deploy API` button.
+   - In the `Stage` option, choose `*New stage*` and provide the stage name.
+   - Click `Deploy` to publish the API to the stage.
+
+2. **Get the `POST` URL**:
+   - After deployment is successful, expand the stage name to reveal the `POST` method.
+   - Locate the `POST` method and copy the `Invoke URL`.
+   - The Invoke URL is used by clients to interact with the API.
+
+## Screenshots:
+
+## Conclusion:
+With the API now deployed, your serverless REST API is live and ready for use. The API Gateway allows for the management of different stages (like development, testing, and production), giving the flexibility in testing and deploying updates. Clients can use the **Invoke URL** to interact with your backend, powered by Lambda and DynamoDB. This concludes the setup for a fully functional, scalable, and serverless REST API using AWS.
