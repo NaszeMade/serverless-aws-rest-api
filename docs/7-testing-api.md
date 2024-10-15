@@ -17,7 +17,8 @@ Postman is a popular tool for testing APIs by simulating HTTP requests to verify
    - From the dropdown to the right of **raw**, choose `JSON` as the data format.
    - In the editor, input the following JSON payload (this may vary depending on your API design):
 
-     ```json
+     ```
+     json
      {
        "operation": "create",
        "tableName": "apigateway-lambda-crud",
@@ -27,7 +28,8 @@ Postman is a popular tool for testing APIs by simulating HTTP requests to verify
            "Number": "8201"
          }
        }
-     } ```
+     }
+     ```
    - Click the **Send** button to make the request.
 
 ### 3. **Verify API Call**:
