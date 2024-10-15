@@ -13,3 +13,9 @@ In this project, I created a fully serverless REST API using AWS services to han
 
 ## Steps Involved
 [1. DynamoDB Setup](./docs/1-dynamodb-setup.md)
+[2. Lamda IAM Role Setup](./docs/2-lambda-iam-role-setup.md)
+[3. Lamda Function Setup](./docs/3-lambda-function-setup.md)
+[4. Lamda Testing](./docs/4-lambda-testing.md)
+[5. API Gateway Setup](./docs/5-api-gateway-setup.md)
+[6. API Deployment](./docs/6-api-deployment.md)
+[7. API Testing](./docs/7-testing-api.md)
