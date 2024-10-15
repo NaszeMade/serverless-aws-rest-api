@@ -12,4 +12,4 @@ In this project, I created a fully serverless REST API using AWS services to han
 - **Postman**
 
 ## Steps Involved
-1-dynamodb-setup
+[1-dynamodb-setup](./docs/1-dynamodb-setup)
