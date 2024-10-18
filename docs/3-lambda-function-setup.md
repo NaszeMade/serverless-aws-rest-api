@@ -12,17 +12,16 @@ The AWS Lambda Function is crucial because it ensures that the Lambda function h
    - Click `Create function`
 3. **Code Source**:
    - Replace the default code source with the following
-     `import boto3
+` import boto3
 import json
 
 print('Loading function')
 
 def lambda_handler(event,context):
-    '''Provide an event that contains the following keys:
-
-      - operation: one of the operations in the operations dict below
-      - tableName: required for operations that interact with DynamoDB
-      - payload: a parameter to pass to the operation being performed '''
+    Provide an event that contains the following keys:
+    # - operation: one of the operations in the operations dict below
+    #  - tableName: required for operations that interact with DynamoDB
+    #  - payload: a parameter to pass to the operation being performed
     
     print('Received event: ' + json.dumps(event, indent = 1))
      
