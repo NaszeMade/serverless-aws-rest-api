@@ -12,14 +12,14 @@ The AWS Lambda Function is crucial because it ensures that the Lambda function h
    - Click `Create function`
 3. **Code Source**:
    - Replace the default code source with the following
-` import boto3
+```import boto3
 import json
 
 print('Loading function')
 
 def lambda_handler(event,context):
     Provide an event that contains the following keys:
-    # - operation: one of the operations in the operations dict below
+    #  - operation: one of the operations in the operations dict below
     #  - tableName: required for operations that interact with DynamoDB
     #  - payload: a parameter to pass to the operation being performed
     
@@ -43,7 +43,8 @@ def lambda_handler(event,context):
     if operation in operations:
         return operations[operation](event.get('payload'))
     else:
-        raise ValueError('Unrecognized operation "{}"'.format(operation)) `
+        raise ValueError('Unrecognized operation "{}"'.format(operation)) 
+```
    - Click `Deploy`.
 
 This Lambda function will now be ready to handle CRUD operations with DynamoDB as specified by the event payload, performing actions such as creating, reading, updating, or deleting items in the specified DynamoDB table.
