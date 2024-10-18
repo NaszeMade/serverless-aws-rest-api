@@ -12,7 +12,8 @@ The AWS Lambda Function is crucial because it ensures that the Lambda function h
    - Click `Create function`
 3. **Code Source**:
    - Replace the default code source with the following
-```import boto3
+```
+import boto3
 import json
 
 print('Loading function')
